@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+
 @Entity
 @Getter
 @Setter
@@ -18,10 +19,9 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 public class Product {
-
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long id;
 	@Column
 	private String name;
 	@Column
